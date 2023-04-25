@@ -5,11 +5,11 @@
 class Tfpro < Formula
   desc ""
   homepage "https://github.com/evners/tfpro"
-  version "0.0.8"
+  version "1.0.0"
 
   on_macos do
-    url "https://github.com/evners/tfpro/releases/download/v0.0.8/tfpro_0.0.8_darwin_all.tar.gz"
-    sha256 "586df285bd99bfc2d023d54511e2491c0b059c5450fbdbdcaf743c7b635a91b9"
+    url "https://github.com/evners/tfpro/releases/download/v1.0.0/tfpro_1.0.0_darwin_all.tar.gz"
+    sha256 "e30cea399819038808d212a57cdfc473d9dbd92ae1e7372c94a604e783d05cdf"
 
     def install
       bin.install "tfpro"
@@ -18,16 +18,16 @@ class Tfpro < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/evners/tfpro/releases/download/v0.0.8/tfpro_0.0.8_linux_arm64.tar.gz"
-      sha256 "342f01022a548625b9582f00c7fe3e4552c63de7be99b515fa9024e702736ecd"
+      url "https://github.com/evners/tfpro/releases/download/v1.0.0/tfpro_1.0.0_linux_arm64.tar.gz"
+      sha256 "58bf1f92179c707737384ebde1f9f829d6848f509adaf4bffd1172c9743d7597"
 
       def install
         bin.install "tfpro"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/evners/tfpro/releases/download/v0.0.8/tfpro_0.0.8_linux_amd64.tar.gz"
-      sha256 "e6cbdec4fc2c31337782eb43e67f84f629fe0167349c206cd8fab458899ff0c8"
+      url "https://github.com/evners/tfpro/releases/download/v1.0.0/tfpro_1.0.0_linux_amd64.tar.gz"
+      sha256 "e836c328d80dec879817001cf985e34cb761f9f6d25e12d25c7c70f3e3350b8c"
 
       def install
         bin.install "tfpro"
